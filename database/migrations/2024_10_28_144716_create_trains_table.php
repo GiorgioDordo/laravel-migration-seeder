@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('arrival_station')->nullable(false);
             $table->date('departure_date')->nullable(false);
             $table->time('departure_time')->nullable(false);
-            $table->date('departure_date')->nullable(false);
+            $table->date('arrival_date')->nullable(false);
             $table->time('arrival_time')->nullable(false);
             $table->string('train_code', 15)->unique()->nullable(false);
             $table->tinyInteger('wagons_number')->unsigned()->nullable(false);
